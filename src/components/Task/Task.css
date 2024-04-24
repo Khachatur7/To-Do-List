@@ -1,0 +1,127 @@
+.task {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 700px;
+    height: 120px;
+    border: 2px solid #00ff0d;
+    padding: 10px 20px 25px 20px;
+    background: #fafafa;
+    margin: 10px;
+    animation: task 0.8s alternate backwards infinite;
+}
+
+.task_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    -webkit-user-select: none;
+}
+
+.wiew {
+    font-size: 15px;
+}
+
+.title_description {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 500;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 400;
+    color: #383838;
+    max-width: 600px;
+    word-break: break-all;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.bttn {
+    all: unset;
+    width: 30px;
+    height: 30px;
+    background: #cccccc;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s ease-out;
+}
+
+.done {
+    border: 1px solid #fff;
+    background: #00ff0d;
+}
+
+.done:hover {
+    border: 1px solid #00ff0d;
+    background: #fff;
+    border-radius: 0px;
+}
+
+.done:hover path {
+    stroke: #00ff0d;
+}
+
+.delete {
+    border-color: #ff0000;
+    background: #ff0000;
+    ;
+}
+
+.delete:hover {
+    border-radius: 0px;
+    background: #fff;
+}
+
+.delete:hover path {
+    fill: #ff0000;
+}
+
+.time_info {
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+    color: #383838;
+}
+
+.imp {
+    border: 2px solid #ffea00;
+    animation: important 0.8s alternate backwards infinite;
+}
+
+@keyframes important {
+    from {}
+
+    to {
+        box-shadow: 5px 5px 0px #ffea00,
+            -5px -5px 0px #ffea00;
+    }
+}
+
+#taskDone {
+    background: #00ff0d;
+
+}
+
+#taskDone .title_description {
+    text-decoration: line-through;
+    text-decoration-color: #383838;
+}

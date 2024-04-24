@@ -1,0 +1,128 @@
+.all {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    -webkit-user-select: none;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.creater {
+    padding: 10px 15px 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.title_inpt {
+    all: unset;
+    outline: none;
+    padding-left: 5px;
+    width: 680px;
+    height: 35px;
+    border-bottom: 1px solid #cccccc;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.desc_inpt {
+    all: unset;
+    outline: none;
+    padding-left: 5px;
+    width: 680px;
+    height: 25px;
+    border-bottom: 1px solid #cccccc;
+    font-size: 15px;
+}
+
+.other {
+    display: flex;
+    flex-direction: column;
+}
+
+.time {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.time_inpt {
+    all: unset;
+    outline: none;
+    padding-left: 5px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #cccccc;
+}
+
+.type {
+    all: unset;
+    width: 50px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}
+
+#imp {
+    opacity: 0;
+}
+
+#label_imp {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+#label_imp::after {
+    content: url("../SvgImages/important.svg");
+    padding-top: 5px;
+}
+
+#imp:checked+#label_imp::after {
+    content: url('../SvgImages/imp_checked.svg');
+}
+
+.task_bttn {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e2e2e2;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.task_bttn:hover {
+    box-shadow: 3px 3px 0px #000,
+        -3px -3px 0px #000;
+    background: #000;
+    border-color: #fff;
+    color: #fff;
+}
+
+.task_buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: right;
+}
