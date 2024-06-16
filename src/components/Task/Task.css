@@ -117,8 +117,15 @@
 }
 
 #taskDone {
-    background: #00ff0d;
+    background: #5f5f5f;
+    border-color: #5f5f5f;
+    color: #fff;
+}
 
+#taskDone .title_description {
+    text-decoration: line-through;
+    text-decoration-color: #383838;
+}
 }
 
 #taskDone .title_description {
