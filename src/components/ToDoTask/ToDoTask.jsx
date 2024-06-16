@@ -67,6 +67,11 @@ export default function ToDoTask({ setShowTasks }) {
     // And send the update array to the LocalStorage
     localStorage.setItem("List_data", JSON.stringify(allData.current));
     // Then I update the state of the parent element so that there are no errors when multiple components change at the same time.
+    title.current.value = "";
+    description.current.value = "";
+    time.current.value = "";
+    type_of_time.current.value = "hour";
+    setCheckbox(false);
     return setShowTasks(JSON.parse(localStorage.getItem("List_data")));
   }
 
