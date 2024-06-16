@@ -37,8 +37,8 @@ export default function Task({ task, setDoneId, setTaskDelete }) {
           >
             <div className="task_info">
               <div className="title_description">
-                <span className="title">{task.title}</span>
-                <span className="description">{task.description}</span>
+                <span className="title"  id={TaskDone ? "taskDone" : ""}>{task.title}</span>
+                <span className="description"  id={TaskDone ? "taskDone" : ""}>{task.description}</span>
               </div>
               <div className="buttons">
                 <Button className={"bttn done"} onClick={TaskDoneFunction}>
@@ -69,3 +69,4 @@ export default function Task({ task, setDoneId, setTaskDelete }) {
     </>
   );
 }
+
